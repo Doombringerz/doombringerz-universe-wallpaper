@@ -9,6 +9,6 @@ It does not cover the Doombringerz Universe content packed in with it. That cont
 - The lore: the names, titles and text in `js/lore.js`, `js/zones.js` and `js/comms.js`, and whatever the wallpaper loads from doombringerz.com.
 - The Doombringerz name and logo.
 
-Fork the code, change it, break it. Swap in your own art and words if you ship your own version.
+You're free to fork the code and change it. If you put out your own version, swap in your own art and text.
 
 The fonts are under the SIL Open Font License 1.1, see `fonts/OFL.txt`.
