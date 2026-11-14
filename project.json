@@ -1,0 +1,169 @@
+{
+  "contentrating": "Everyone",
+  "description": "Fly down through the Doombringerz Universe, realm by realm, Cosmic Ceiling to Origin Depths. Lore Map, Codex, Timeline, Wiki and Enochian Translator ride along. Auto tour, or Interactive: click for waypoints, steer with the mouse, scroll to push in. The mouse reads glyphs. Click a realm on the Lore Map to jump there. Reacts to audio.",
+  "file": "index.html",
+  "general": {
+    "properties": {
+      "schemecolor": {
+        "order": 0,
+        "text": "ui_browse_properties_scheme_color",
+        "type": "color",
+        "value": "0.784 0.631 0.290"
+      },
+      "hudmode": {
+        "order": 1,
+        "text": "HUD",
+        "type": "combo",
+        "value": "full",
+        "options": [
+          {
+            "label": "Full: Lore Map, Codex, Timeline",
+            "value": "full"
+          },
+          {
+            "label": "Cinematic: title cards only",
+            "value": "cinematic"
+          },
+          {
+            "label": "Clean: flight only",
+            "value": "clean"
+          }
+        ]
+      },
+      "flightmode": {
+        "order": 2,
+        "text": "Flight",
+        "type": "combo",
+        "value": "auto",
+        "options": [
+          {
+            "label": "Auto: tours the realms by itself",
+            "value": "auto"
+          },
+          {
+            "label": "Interactive: you pick where to go",
+            "value": "interactive"
+          }
+        ]
+      },
+      "idleresume": {
+        "order": 3,
+        "text": "Resume auto tour after idle (minutes, 0 = never)",
+        "type": "slider",
+        "min": 0,
+        "max": 30,
+        "value": 0,
+        "editable": true,
+        "condition": "flightmode.value == 'interactive'"
+      },
+      "realmseconds": {
+        "order": 4,
+        "text": "Seconds per realm",
+        "type": "slider",
+        "min": 8,
+        "max": 90,
+        "value": 22,
+        "editable": true
+      },
+      "glyphmotes": {
+        "order": 5,
+        "text": "Glyph motes",
+        "type": "slider",
+        "min": 0,
+        "max": 120,
+        "value": 54,
+        "editable": true
+      },
+      "wikiweb": {
+        "order": 6,
+        "text": "Wiki web",
+        "type": "bool",
+        "value": true
+      },
+      "translator": {
+        "order": 7,
+        "text": "Translator reticle (mouse)",
+        "type": "bool",
+        "value": true
+      },
+      "clock": {
+        "order": 8,
+        "text": "Clock",
+        "type": "bool",
+        "value": true
+      },
+      "dimplates": {
+        "order": 9,
+        "text": "Dim realm art (%)",
+        "type": "slider",
+        "min": 0,
+        "max": 60,
+        "value": 6,
+        "editable": true
+      },
+      "zonetour": {
+        "order": 10,
+        "text": "Visit zones inside each realm",
+        "type": "bool",
+        "value": true
+      },
+      "comms": {
+        "order": 11,
+        "text": "Rascal and Halcyon on the comms",
+        "type": "bool",
+        "value": true
+      },
+      "unseal": {
+        "order": 12,
+        "text": "Live unsealing (reads the public timeline and Codex online)",
+        "type": "bool",
+        "value": true
+      },
+      "audioreact": {
+        "order": 13,
+        "text": "React to audio",
+        "type": "bool",
+        "value": true
+      },
+      "audiostrength": {
+        "order": 14,
+        "text": "Audio strength (%)",
+        "type": "slider",
+        "min": 0,
+        "max": 300,
+        "value": 100,
+        "editable": true,
+        "condition": "audioreact.value == true"
+      },
+      "quality": {
+        "order": 15,
+        "text": "Render quality",
+        "type": "combo",
+        "value": "high",
+        "options": [
+          {
+            "label": "Low (720p)",
+            "value": "low"
+          },
+          {
+            "label": "Balanced (1080p)",
+            "value": "balanced"
+          },
+          {
+            "label": "High (native, up to 4K)",
+            "value": "high"
+          }
+        ]
+      }
+    },
+    "supportsaudioprocessing": true
+  },
+  "preview": "preview.jpg",
+  "tags": [
+    "Fantasy",
+    "Anime"
+  ],
+  "title": "Doombringerz Universe",
+  "type": "web",
+  "visibility": "private"
+}

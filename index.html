@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doombringerz Universe</title>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/wallpaper.css">
+</head>
+<body class="hud-full">
+<canvas id="gl"></canvas>
+<canvas id="fx"></canvas>
+
+<div id="hud">
+  <header class="brand">
+    <div class="brand-mark">Doombringerz <span>Universe</span></div>
+    <div class="brand-sub">
+      <span class="label" id="stratum">Stratum 01 / 10</span>
+      <span class="bar"><i id="stratum-bar"></i></span>
+    </div>
+    <div class="mode-hint" id="mode-hint"></div>
+  </header>
+
+  <div class="ticker">
+    <div class="stat"><span class="label">Rift stability</span><b class="rift" id="stability">0.91</b></div>
+    <div class="stat"><span class="label">Observer</span><b>Watching</b></div>
+    <div class="clock" id="clock">00:00</div>
+  </div>
+
+  <aside class="panel map">
+    <div class="panel-head"><span data-glyph="3"></span><span class="label">Lore Map</span><span class="count">Cosmic</span></div>
+    <div class="map-frame">
+      <img id="cosmic" alt="">
+      <svg id="route" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+      <div class="marker" id="marker"></div>
+    </div>
+    <div class="map-foot"><span id="map-name"></span><span class="mono" id="map-coord"></span></div>
+  </aside>
+
+  <aside class="panel codex">
+    <div class="panel-head"><span data-glyph="4"></span><span class="label">Codex of the Riftborn</span><span class="count" id="codex-count"></span></div>
+    <div id="codex-body">
+      <h2 id="codex-name"></h2>
+      <div class="tier" id="codex-tier"></div>
+      <p class="desc" id="codex-desc"></p>
+      <ul id="codex-features"></ul>
+      <blockquote id="codex-note"></blockquote>
+    </div>
+  </aside>
+
+  <section class="title-card" id="title-card">
+    <div class="kicker">Now entering</div>
+    <div id="tc-name"></div>
+    <div class="rule"><i></i><span class="tier" id="tc-tier"></span><i></i></div>
+  </section>
+
+  <footer class="timeline">
+    <div class="tl-label"><span class="label">Timeline</span><span class="tl-title" id="tl-title"></span><span class="tl-note" id="tl-note"></span></div>
+    <div class="tl-track" id="tl-track"></div>
+  </footer>
+
+  <div class="panel wiki-card" id="wiki-card">
+    <div class="panel-head"><span data-glyph="12"></span><span class="label" id="wiki-kind"></span></div>
+    <h3 id="wiki-name"></h3>
+    <p id="wiki-line"></p>
+    <div class="links" id="wiki-links"></div>
+  </div>
+
+  <div class="translate" id="translate">
+    <span class="label">Translator</span>
+    <b id="tr-name"></b>
+    <span id="tr-mean"></span>
+  </div>
+
+  <div class="pins" id="pins"></div>
+
+  <aside class="comms" id="comms">
+    <div class="who rascal"><div class="face"></div><div class="tag"><b>Rascal</b><span>Chaos Incarnate</span></div><div class="say"></div></div>
+    <div class="who halcyon"><div class="face"></div><div class="tag"><b>Halcyon</b><span>Celestial Discipline</span></div><div class="say"></div></div>
+  </aside>
+</div>
+
+<div class="toast" id="toast"></div>
+
+
+<div class="ring" id="ring"></div>
+
+<script src="js/assets.js"></script>
+<script src="js/glyphs.js"></script>
+<script src="js/lore.js"></script>
+<script src="js/zones.js"></script>
+<script src="js/cameo.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/overlay.js"></script>
+<script src="js/hud.js"></script>
+<script src="js/deep.js"></script>
+<script src="js/comms.js"></script>
+<script src="js/unseal.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
