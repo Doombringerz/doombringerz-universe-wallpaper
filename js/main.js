@@ -190,8 +190,8 @@
 
   // Interactive: the mouse steers the view across the plate, the wheel pushes in.
   function steerCam(now, dt) {
-    steer[0] += (mouse[0] * 0.95 - steer[0]) * Math.min(1, dt * 0.9);
-    steer[1] += (mouse[1] * 0.95 - steer[1]) * Math.min(1, dt * 0.9);
+    steer[0] += (mouse[0] * 0.95 - steer[0]) * Math.min(1, dt * 3.5);
+    steer[1] += (mouse[1] * 0.95 - steer[1]) * Math.min(1, dt * 3.5);
     return [1.08 + zoomExtra + Math.sin(now * 0.21) * 0.015, steer[0], steer[1]];
   }
 
@@ -308,8 +308,8 @@
       mouseTarget[0] = Math.sin(now * 0.11) * 0.35;
       mouseTarget[1] = Math.sin(now * 0.07 + 1.3) * 0.25;
     }
-    mouse[0] += (mouseTarget[0] - mouse[0]) * Math.min(1, dt * 2.2);
-    mouse[1] += (mouseTarget[1] - mouse[1]) * Math.min(1, dt * 2.2);
+    mouse[0] += (mouseTarget[0] - mouse[0]) * Math.min(1, dt * 9);
+    mouse[1] += (mouseTarget[1] - mouse[1]) * Math.min(1, dt * 9);
 
     var cur = REALMS[state.idx];
     var mix = 0, warp = 0, flash = 0, camA, camB;
@@ -330,8 +330,8 @@
         deep.setActive(cur, activeZone, state.idx);
       } else if (state.zone !== null) {
         activeZone = state.zone;
-        steer[0] += (mouse[0] - steer[0]) * Math.min(1, dt * 0.9);
-        steer[1] += (mouse[1] - steer[1]) * Math.min(1, dt * 0.9);
+        steer[0] += (mouse[0] - steer[0]) * Math.min(1, dt * 2.5);
+        steer[1] += (mouse[1] - steer[1]) * Math.min(1, dt * 2.5);
         aim = deep.focusCam(cur, state.zone, steer) || steerCam(now, dt);
         rate = 1.3;
       } else {
