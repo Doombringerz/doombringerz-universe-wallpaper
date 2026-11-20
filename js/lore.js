@@ -100,7 +100,7 @@ window.RIFT_LORE = {
   ],
   links: [
     ['rascal', 'halcyon'], ['rascal', 'duality'], ['halcyon', 'duality'], ['rascal', 'enochian'], ['halcyon', 'enochian'],
-    ['observer', 'stillpoint'], ['observer', 'song'], ['observer', 'blink'], ['stillpoint', 'song'], ['stillpoint', 'unknown'],
+    ['observer', 'stillpoint'], ['observer', 'song'], ['stillpoint', 'song'], ['stillpoint', 'unknown'],
     ['song', 'enochian'], ['blink', 'r-origin'], ['fracture', 'r-origin'], ['doomjr', 'fracture'], ['doomjr', 'luna'],
     ['doomjr', 'aethera'], ['doomjr', 'observer'], ['duality', 'laws'], ['r-above', 'r-between'], ['r-between', 'r-below'],
     ['r-rift', 'r-aetheria'], ['r-aetheria', 'r-above'], ['r-aetheria', 'r-below'], ['fracture', 'r-rift'], ['halcyon', 'r-above']
